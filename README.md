@@ -24,7 +24,7 @@
 ## ✨ Özellikler / Features
 
 - **Evrensel Slicer Desteği:**
-  - **UltiMaker Cura (4.13+):** Tek dosyayla sürükle-bırak `.curapackage` eklentisi (`cura/EnUcuzNerede.curapackage`).
+  - **UltiMaker Cura (4.13+):** Tek dosyayla sürükle-bırak `.curapackage` eklentisi (`cura/BaskiHesap.curapackage`).
   - **Bambu Studio, OrcaSlicer, PrusaSlicer:** Harici bağımlılık gerektirmeyen Python 3 post-processing betiği (`src/en_ucuz_slicer.py`).
 - **AMS / Çok Renkli G-Code Desteği:** Virgüllü ve noktalı virgüllü çoklu filament ağırlıklarını (`; filament used [g] = 120.5, 45.2`) toplar, baskı süresini (`estimated printing time`) ve renk kodunu okur.
 - **Sıfır Gecikme & G-Code Güvenliği:** Dosyayı **yalnızca okur** (asla yazmaz/değiştirmez); ağ sorgusu ve bildirim ayrı süreçte çalışır, dilimlemeyi milisaniyeler içinde serbest bırakır.
@@ -37,7 +37,7 @@
 
 ### 1. UltiMaker Cura (4.13 ve üzeri)
 
-1. `cura/EnUcuzNerede.curapackage` dosyasını indirin (veya [Releases](https://github.com/erdalkeskin61/baskihesap-slicer-plugin/releases) sayfasından alın).
+1. `cura/BaskiHesap.curapackage` dosyasını indirin (veya [Releases](https://github.com/erdalkeskin61/baskihesap-slicer-plugin/releases) sayfasından alın).
 2. Dosyayı açık **Cura** penceresinin üzerine **sürükleyip bırakın**.
 3. Cura'yı yeniden başlatın — her dilimleme sonrası sağ alt köşede canlı filament maliyeti ve en ucuz mağaza bağlantısı belirir.
 
@@ -81,8 +81,8 @@ baskihesap-slicer-plugin/
 ├── src/
 │   └── en_ucuz_slicer.py          # Bambu Studio / OrcaSlicer / PrusaSlicer betiği
 ├── cura/
-│   ├── EnUcuzNerede.curapackage   # Hazır Cura paketi (v1.0.0)
-│   └── EnUcuzNerede/              # Cura eklenti kaynak kodları
+│   ├── BaskiHesap.curapackage     # Hazır Cura paketi (v1.0.0)
+│   └── BaskiHesap/                # Cura eklenti kaynak kodları
 └── docs/
     └── screenshots/               # Bildirim ve canlı arayüz önizlemeleri
 ```
